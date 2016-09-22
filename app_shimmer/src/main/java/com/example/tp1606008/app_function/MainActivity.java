@@ -16,10 +16,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         findId();
         shimmer();
-
     }
+
     public void findId(){
 
         mShimmer = (ShimmerFrameLayout) findViewById(R.id.shimmer_view_container);
@@ -33,25 +34,21 @@ public class MainActivity extends AppCompatActivity {
         mShimmer.setDuration(5000);
         mShimmer.setRepeatMode(ObjectAnimator.REVERSE);
 
-
         mShimmer2.setBaseAlpha(0.1f);
         mShimmer2.setDropoff(0.1f);
         mShimmer2.setTilt(10);
         mShimmer2.setDuration(4000);
-
 
         mShimmer3.setAngle(ShimmerFrameLayout.MaskAngle.CW_90);
         mShimmer3.setDuration(500);
         mShimmer4.setDropoff(0.3f);
         mShimmer4.setIntensity(0.6f);
 
-
         mShimmer4.setBaseAlpha(0);
         mShimmer4.setDuration(5000);
         mShimmer4.setDropoff(0.1f);
         mShimmer4.setIntensity(0.35f);
         mShimmer4.setMaskShape(ShimmerFrameLayout.MaskShape.RADIAL);
-
     }
 
 
