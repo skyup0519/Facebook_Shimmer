@@ -56,10 +56,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        mShimmer.startShimmerAnimation();
-        mShimmer2.startShimmerAnimation();
-        mShimmer3.startShimmerAnimation();
-        mShimmer4.startShimmerAnimation();
+//        mShimmer.startShimmerAnimation();
+//        mShimmer2.startShimmerAnimation();
+//        mShimmer3.startShimmerAnimation();
+//        mShimmer4.startShimmerAnimation();
+
+        mShimmer.setAutoStart(true);
+        mShimmer2.setAutoStart(true);
+        mShimmer3.setAutoStart(true);
+        mShimmer4.setAutoStart(true);
     }
 
     @Override
